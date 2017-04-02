@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+When you're building websites, you want to start by just putting content in. The fact that browsers have default styles shouldn't matter to you because we're going to override them all anyways.
+
+Stage 1: Semantic Content
+Stage 2: Style it using CSS
+-->
+<html>
+<head>
+  <meta charset = "utf-8"> <!-- Allows you to use special characters -->
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> <!-- This loads the google font I have selected for my website so ANYONE can use the font I want them to -->
+
+  <link rel = "stylesheet" href = "pstyle.css">
+
+  <title>Phil Greene</title>
+  <!-- You can create your own custom class within your code and then customize it in the style section-->
+
+</head>
+
+<body>
+  <div class = main-content>
+    <div class = row>
+
+      <div class = "cover">
+        <!-- Cover Photo -->
+        <!--<img src = "Photos/cover.jpg" height = "150">-->
+        <div class = "half-page">
+              <img src = "Photos/profile.jpg" height = "150"> <!-- Profile Photo -->
+        </div>
+        <div class = "half-page">
+              <h1>
+                Phil Greene
+              </h1>
+        </div>
+      </div>
+        <!-- You can put anything inbetween the a tag (text, image, etc.) and it will become the hyperlink
+        <a href = "https://www.google.com" target = "_blank">
+        <img src = "Photos/profile.jpg" height = "150">
+      </a> -->
+
+      <!-- <img src = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAl9AAAAJDE3NjNlYjgwLTQyZTgtNDYzOS04ODkxLTdiYjA5YzVlYzFkZA.jpg" height = "150"> -->
+
+      <!-- images are inline elements, which means they don't have any natural formatting. One way to give them formatting is to put them within a paragraph tag. This would separate them. A paragraph is a block-level, so it gives it the new line. -->
+
+      <div class = "half-page">
+        <h2>
+          Where I'm from
+        </h2>
+        <p>
+          I grew up all over. My <a href = "https://en.wikipedia.org/wiki/Philip_H._Greene,_Jr." target = "_blank">father</a> was in the Navy, so I moved <span class = "excited">12 times in the first 18 years of my life.</span> Right now, home is Chicago, IL!
+          <!-- Span is an inline element that you can use to assign classes to words within the body-->
+        </p>
+      </div>
+
+      <div class = "half-page">
+        <h2>
+          What am I working on
+        </h2>
+        <ul>
+          <li>Application Development</li>
+          <li>Portefini (NVC)</li>
+        </ul>
+      </div>
+
+
+      <div class = "full-page">
+        <h2>
+          What have I done
+        </h2>
+
+        <table class = "table-full-page">
+          <!-- Row 1 -->
+          <tr>
+            <th colspan = "4">When</th>
+            <th colspan = "4">What</th>
+            <th colspan = "4">Where</th>
+          </tr>
+          <!-- Row 2 -->
+          <tr>
+            <td colspan = "4">2016 - Present</td>
+            <td colspan = "4">MBA, Chicago Booth School of Business</td>
+            <td colspan = "4">Chicago, IL</td>
+          </tr>
+          <!-- Row 3 -->
+          <tr>
+            <td colspan = "4">2012 - 2016</td>
+            <td colspan = "4">Accenture</td>
+            <td colspan = "4">Washington, D.C.</td>
+          </tr>
+          <!-- Row 4 -->
+          <tr>
+            <td colspan = "4">2008 - 2012</td>
+            <td colspan = "4">BSFS, Georgetown University</td>
+            <td colspan = "4">Washington, D.C.</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class = "full-page">
+        <h2>
+          Some Photos
+        </h2>
+      </div>
+
+      <div class = "one-third-page">
+        <div class = "pic">
+          <img src = "Photos/wedding.jpg" height = "250">
+        </div>
+      </div>
+      <div class = "one-third-page">
+        <div class = "pic">
+          <img src = "Photos/egypt.jpg" height = "250">
+        </div>
+      </div>
+      <div class = "one-third-page">
+        <div class = "pic">
+          <img src = "Photos/squad.jpg" height = "250">
+        </div>
+      </div>
+
+      <div class = "full-page">
+        <h2>
+          Favorite Restaurant
+        </h2>
+
+          <!-- Embedded map code was copied from Google Maps "Share" feature. I selected Embed map and chose a small map size. It gave me the code below.-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.840649862776!2d-76.99743178525898!3d38.88188747957301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b8333ace7dc5%3A0x608c772708ede5f7!2sCava+Mezze+Capitol+Hill!5e0!3m2!1sen!2sus!4v1490902964108" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
