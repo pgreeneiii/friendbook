@@ -2,10 +2,19 @@
  Coding To-Do List
 \*********************/
 /*
-   1. Need to add Vine video
-   2. Need to add Youtube video
-   3. Consider adding a "button" for something
+   1. Consider adding a "button" for something
+   2. Fix the height of map and twitch video
+*/
 
+
+
+/*********************\
+  Questions for Class
+\*********************/
+/*
+   1. Why does my page seem skinniner than Raghu's and Don's even when I set the width to 960px? I had to increase width to 1100px to make it seem the same.
+   2. How can I ensure alignment on the left and the right when I am using thirds or fifths + margins?
+   3. Are there general rules of thumb for when to use Divs vs. when to use a table for page organization? I noticed that Raghu's page uses Divs, but then has a table for his profile pic and name.
 */
 
 
@@ -15,8 +24,18 @@
 \*********************/
 body{
    font-family: 'Raleway', sans-serif;
-   color: 	#333;
+   color: #333; /*dark grey*/
    text-align: center;
+}
+
+h1 {
+   color: #f2f2f2; /*soft white*/
+   font-size: 36px;
+}
+
+h2 {
+   color: #e68a00; /*orange*/
+   font-size: 22px;
 }
 
 ul{
@@ -25,15 +44,7 @@ ul{
    text-align: left;
 }
 
-h1 {
-   color: #f2f2f2;
-   font-size: 36px;
-}
 
-h2 {
-   color: #e68a00;
-   font-size: 22px;
-}
 
 
 
@@ -74,13 +85,11 @@ h2 {
    background-color: rgba(0,0,0,0.3);
 }
 
+
+
 /*********************\
   Body Section Styling
 \*********************/
-
-.excited{
-   font-style: italic;
-}
 
 .main-content{
    width: 1100px;
@@ -109,6 +118,7 @@ h2 {
    float: left;
    border: 1px solid #ddd;
    height: 125px;
+   padding: 5px;
 }
 .one-third-page{
    width: 32.5%;
@@ -124,6 +134,7 @@ h2 {
    border-right: 1.5px solid #ddd;
    border-bottom: 1.5px solid #ddd;
    border-radius: 5px;
+   transition: all .2s ease-in-out;
 }
 .one-third-page:hover, .one-fifth-page:hover, .full-page:hover, .half-page:hover, .quarter-page:hover{
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -137,4 +148,8 @@ h2 {
 
 .pic{
    margin: auto;
+}
+
+.row{
+   clear: both;
 }
