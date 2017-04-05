@@ -1,95 +1,140 @@
-/* CSS Specificity determines which rules apply. The most specific rule will win AND the last thing it sees wins. You can google this.*/
+/*********************\
+ Coding To-Do List
+\*********************/
+/*
+   1. Need to add Vine video
+   2. Need to add Youtube video
+   3. Consider adding a "button" for something
+
+*/
+
+
+
+/*********************\
+ General Site Style
+\*********************/
 body{
-  font-family: 'Raleway', sans-serif;
-  color: 	#333;
-  text-align: center;
+   font-family: 'Raleway', sans-serif;
+   color: 	#333;
+   text-align: center;
 }
 
 ul{
-  margin: auto;
-  width: 50%;
-  text-align: left;
+   margin: auto;
+   width: 50%;
+   text-align: left;
 }
 
 h1 {
-  color: #e68a00;
-  font-size: 36px;
+   color: #f2f2f2;
+   font-size: 36px;
 }
 
 h2 {
-  color: #e68a00;
-  font-size: 22px;
+   color: #e68a00;
+   font-size: 22px;
 }
 
-*{
-  /*border: thin red solid;*/ /* This is a shortcut of three rules*/
+
+
+/*********************\
+ Cover Section Styling
+\*********************/
+
+.cover{
+   width: 100%;
+   background: url("Photos/cover.jpg") no-repeat center;
+   background-size: cover;
+   height: 375px;
+
 }
 
-/*Putting a dot in front of the selector makes it a CLASS SELECTOR*/
+.cover-profile{
+   width: 50%;
+   float: left;
+   height: 375px;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   padding-left: 75px;
+   background-color: rgba(0,0,0,0.3);
+}
+.prof-pic{
+   border: solid white 4px;
+}
+
+.cover-name{
+   width: 50%;
+   float: left;
+   height: 375px;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   padding-left: 165px;
+   background-color: rgba(0,0,0,0.3);
+}
+
+/*********************\
+  Body Section Styling
+\*********************/
+
 .excited{
-  font-style: italic;
+   font-style: italic;
 }
 
 .main-content{
-  width: 100%;
-  box-sizing: border-box;
-  float: left;
+   width: 1100px;
+   margin: auto;
+   border-spacing: 10px;
 }
 .full-page{
-  width: 100%;
-  box-sizing: border-box;
-  float: left;
+   width: 100%;
+   box-sizing: border-box;
+   float: left;
 }
 .table-full-page{
-  width: 100%;
-  box-sizing: border-box;
-  float: left;
+   width: 100%;
+   box-sizing: border-box;
+   float: left;
 }
 .quarter-page{
-  width: 25%;
-  box-sizing: border-box;
-  float: left;
-  border: 1px solid #ddd;
+   width: 25%;
+   box-sizing: border-box;
+   float: left;
+   border: 1px solid #ddd;
 }
 .half-page{
-  width: 50%;
-  box-sizing: border-box;
-  float: left;
-  border: 1px solid #ddd;
-  height: 125px;
+   width: 50%;
+   box-sizing: border-box;
+   float: left;
+   border: 1px solid #ddd;
+   height: 125px;
 }
 .one-third-page{
-  width: 32.5%;
-  margin: 0.4%;
-  box-sizing: border-box;
-  float: left;
-  height: 300px;
-  display: flex;
+   width: 32.5%;
+   margin: 0.4%;
+   box-sizing: border-box;
+   float: left;
+   height: 300px;
+   display: flex;
 }
 .full-page, .half-page, .quarter-page, .one-third-page, .one-fifth-page {
-  border-top: 1px solid #e6e6e6;
-  border-left: 1.5px solid #ddd;
-  border-right: 1.5px solid #ddd;
-  border-bottom: 1.5px solid #ddd;
-  border-radius: 5px;
+   border-top: 1px solid #e6e6e6;
+   border-left: 1.5px solid #ddd;
+   border-right: 1.5px solid #ddd;
+   border-bottom: 1.5px solid #ddd;
+   border-radius: 5px;
 }
 .one-third-page:hover, .one-fifth-page:hover, .full-page:hover, .half-page:hover, .quarter-page:hover{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .one-fifth-page{
-  width: 20%;
-  box-sizing: border-box;
-  float: left;
-  border: 1px solid #ddd;
+   width: 20%;
+   box-sizing: border-box;
+   float: left;
+   border: 1px solid #ddd;
 }
-.cover{
-  background: url("Photos/cover.jpg") no-repeat center fixed;
-  background-size: cover;
-  height: 375px;
-}
-   /*background: url("Photos/cover.jpg") no-repeat center center fixed;
-   background-size: cover;*/
-}
+
 .pic{
-  margin: auto;
+   margin: auto;
 }
