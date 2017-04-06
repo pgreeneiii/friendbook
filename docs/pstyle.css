@@ -3,7 +3,6 @@
 \*********************/
 /*
    1. Consider adding a "button" for something
-   2. Fix the height of map and twitch video
 */
 
 
@@ -43,8 +42,6 @@ ul{
    width: 50%;
    text-align: left;
 }
-
-
 
 
 
@@ -90,66 +87,74 @@ ul{
 /*********************\
   Body Section Styling
 \*********************/
+   /*Positioning*/
+   .container{
+      /*display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;*/
+   }
 
-.main-content{
-   width: 1100px;
-   margin: auto;
-   border-spacing: 10px;
-}
-.full-page{
-   width: 100%;
-   box-sizing: border-box;
-   float: left;
-}
-.table-full-page{
-   width: 100%;
-   box-sizing: border-box;
-   float: left;
-}
-.quarter-page{
-   width: 25%;
-   box-sizing: border-box;
-   float: left;
-   border: 1px solid #ddd;
-}
-.half-page{
-   width: 50%;
-   box-sizing: border-box;
-   float: left;
-   border: 1px solid #ddd;
-   height: 125px;
-   padding: 5px;
-}
-.one-third-page{
-   width: 32.5%;
-   margin: 0.4%;
-   box-sizing: border-box;
-   float: left;
-   height: 300px;
-   display: flex;
-}
-.full-page, .half-page, .quarter-page, .one-third-page, .one-fifth-page {
-   border-top: 1px solid #e6e6e6;
-   border-left: 1.5px solid #ddd;
-   border-right: 1.5px solid #ddd;
-   border-bottom: 1.5px solid #ddd;
-   border-radius: 5px;
-   transition: all .2s ease-in-out;
-}
-.one-third-page:hover, .one-fifth-page:hover, .full-page:hover, .half-page:hover, .quarter-page:hover{
-   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.one-fifth-page{
-   width: 20%;
-   box-sizing: border-box;
-   float: left;
-   border: 1px solid #ddd;
-}
+   .main-content{
+      width: 1100px;
+      margin: auto;
+   }
 
-.pic{
-   margin: auto;
-}
+   .full-page, .table-full-page, .half-page-small, .half-page-large, .one-third-page {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin: auto;
 
-.row{
-   clear: both;
-}
+      float: left;
+      box-sizing: border-box;
+   }
+   /*Sizing*/
+   .full-page, .table-full-page{
+      width: 100%;
+   }
+
+   .half-page-small, .half-page-large{
+      width: 50%;
+   }
+   .one-third-page{
+      width: 33.3%;
+   }
+
+
+   /*Styling*/
+
+   .half-page-small{
+      border: 1px solid #ddd;
+      height: 125px;
+      /*padding: 5px;*/
+   }
+
+   .half-page-large{
+      border: 1px solid #ddd;
+      height: 400px;
+      /*padding: 5px;*/
+   }
+   .one-third-page{
+      height: 300px;
+      display: flex;
+   }
+
+   .full-page, .half-page-small, .half-page-large, .one-third-page {
+      border-top: 1px solid #e6e6e6;
+      border-left: 1.5px solid #ddd;
+      border-right: 1.5px solid #ddd;
+      border-bottom: 1.5px solid #ddd;
+      border-radius: 5px;
+      transition: all .2s ease-in-out;
+   }
+   .one-third-page:hover, .full-page:hover, .half-page-small:hover, .half-page-large:hover{
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   }
+
+   .pic{
+      margin: auto;
+   }
